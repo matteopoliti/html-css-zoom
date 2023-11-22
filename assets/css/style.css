@@ -69,17 +69,25 @@ main{
     padding: 5px;
 }
 
-footer{
+.footer-container{
     background-color: #222222;
-    color: white;
     text-transform: capitalize;
-    padding: 15px;
+    width: 100%;
     position: fixed;
     bottom: 0;
-    width: 100%;
+}
+
+footer{
+    color: white;
+    position: relative;
     display: flex;
     justify-content: space-between;
     
+}
+
+footer div:nth-child(1),
+footer div:nth-child(2){
+    padding: 15px;
 }
 
 footer span{
@@ -111,8 +119,21 @@ footer svg{
     margin-bottom: 5px;
 }
 
+footer ul li .fa-share-from-square{
+    color: #4BC800;
+}
+
 footer div:last-child{
     color: red;
     background-color: #4a4a4a;
+    padding: 15px;
+    position: relative;
+}
 
+footer div:last-child{
+    color: red;
+    background-color: #4a4a4a;
+    padding: 15px;
+    display: flex;
+    align-items: center;
 }
