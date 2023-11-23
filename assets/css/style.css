@@ -39,9 +39,11 @@ header i{
 }
 
 header{
-    position: absolute;
-    top: 2px;
-    right: 0;
+    display:flex;
+    justify-content: flex-end;
+    gap: 10px;
+    height: 60px;
+    align-items: center;
 }
 
 main{
@@ -49,7 +51,10 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     gap: 10px;
+    overflow: auto;
+    height: calc( 100% - (60px + 80px) );
 }
 .container main div img{
     display: block;
@@ -75,19 +80,21 @@ main{
     width: 100%;
     position: fixed;
     bottom: 0;
+    
 }
 
 footer{
     color: white;
-    position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 80px;
     
 }
 
-footer div:nth-child(1),
-footer div:nth-child(2){
+footer div{
     padding: 15px;
+    height: 80px;
 }
 
 footer span{
@@ -98,6 +105,7 @@ footer ul{
     display: flex;
     gap: 15px;
     align-items: center;
+    
 }
 
 footer ul li{
@@ -123,17 +131,11 @@ footer ul li .fa-share-from-square{
     color: #4BC800;
 }
 
-footer div:last-child{
-    color: red;
-    background-color: #4a4a4a;
-    padding: 15px;
-    position: relative;
-}
+
 
 footer div:last-child{
     color: red;
     background-color: #4a4a4a;
-    padding: 15px;
     display: flex;
     align-items: center;
 }
